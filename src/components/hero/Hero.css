@@ -1,0 +1,33 @@
+.boxHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.textoHero {
+    display: grid;
+    justify-content: first baseline;
+    align-items: center;
+
+    background-color: deeppink;
+    height: 35rem;
+    width: 27rem;
+}
+
+.pHero {
+    font-size: 4rem;
+    padding-left: 4rem;
+    color: white;
+}
+
+.boxImgHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+}
+
+.imgHero {
+    max-height: 35rem;
+}
