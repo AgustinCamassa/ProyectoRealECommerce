@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Sobre el Proyecto",
+    "type": "about"
+  },
+  {
+    "id": 2,
+    "name": "Un bolso para cada momento",
+    "type": "products"
+  },
+  {
+    "id": 3,
+    "name": "Contacto",
+    "type": "contact"
+  },
+  {
+    "id": 4,
+    "name": "Preguntas Frecuentes",
+    "type": "qya"
+  }
+]

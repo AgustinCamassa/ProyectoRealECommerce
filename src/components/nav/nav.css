@@ -1,0 +1,9 @@
+.link-inactive {
+  position: relative;
+  color: #000000;
+  display: inline-block;
+}
+
+.link-inactive:hover {
+  color: theme("colors.primary");
+}
