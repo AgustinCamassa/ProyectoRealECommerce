@@ -1,14 +1,27 @@
-// ResponsiveCarousel.js
+import { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination, Navigation } from "swiper/modules";
+import car1 from "../../../assets/img/car1.png";
+import car2 from "../../../assets/img/car2.png";
+import car3 from "../../../assets/img/car3.png";
+import car4 from "../../../assets/img/car4.png";
+import { TextContext } from "../textContent/textContent";
+import data from "../../../data/carousel.json";
 import "./carousel.css";
 
 export const Carousel = () => {
+  const { updateText } = useContext(TextContext);
+  // const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleUpdateText = (productID) => {
+    const text = data.find((product) => product.id == productID);
+    updateText(text);
+  };
+
   return (
     <div className="lg:w-8/12 w-full">
       <Swiper
-        spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
           600: {
@@ -20,38 +33,51 @@ export const Carousel = () => {
         }}
         navigation
         modules={[Navigation, Pagination]}
+        // onSlideChange={() =>  handleUpdateText(swiper.activeIndex)}
+        onRealIndexChange={(element) => {
+          // setActiveIndex(element.activeIndex);
+          handleUpdateText(element.activeIndex + 1);
+          // console.log(activeIndex);
+        }}
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
       >
-        <SwiperSlide className="carousel-slide">
-          <div className="slide-content">
-            <img src="https://placekitten.com/400/301" alt="Slide 1" />
-            <h3>Slide 2</h3>
-            <p>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <SwiperSlide className="carousel-slide" id="swiperSlide-1">
+          <div
+            className="slide-content"
+            onClick={() => handleUpdateText(1)}
+            onMouseEnter={() => handleUpdateText(1)}
+          >
+            <img src={car1} alt="1" />
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="carousel-slide">
-          <div className="slide-content">
-            <img src="https://placekitten.com/400/302" alt="Slide 2" />
-            <h3>Slide 3</h3>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris.
-            </p>
+        <SwiperSlide className="carousel-slide" id="swiperSlide-2">
+          <div
+            className="slide-content"
+            onClick={() => handleUpdateText(2)}
+            onMouseEnter={() => handleUpdateText(2)}
+          >
+            <img src={car2} alt="2" />
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="carousel-slide">
-          <div className="slide-content">
-            <img src="https://placekitten.com/400/302" alt="Slide 3" />
-            <h3>Slide 3</h3>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris.
-            </p>
+        <SwiperSlide className="carousel-slide" id="swiperSlide-3">
+          <div
+            className="slide-content"
+            onClick={() => handleUpdateText(3)}
+            onMouseEnter={() => handleUpdateText(3)}
+          >
+            <img src={car3} alt="3" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="carousel-slide" id="swiperSlide-4">
+          <div
+            className="slide-content"
+            onClick={() => handleUpdateText(4)}
+            onMouseEnter={() => handleUpdateText(4)}
+          >
+            <img src={car4} alt="4" />
           </div>
         </SwiperSlide>
       </Swiper>

@@ -5,17 +5,33 @@ import { Products } from "./components/products/products";
 import "./App.css";
 import "./index.css";
 
+import Footer from "./components/footer/Footer";
+import Preguntas from "./components/Preguntas/Preguntas";
+import About from "./components/about/about";
+import { TextProvider } from "./components/products/textContent/textContent";
+
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="#" element={<Hero />} />
-        </Routes>
-        <Hero />
-        <Products />
-      </BrowserRouter>
+      <TextProvider>
+        <BrowserRouter>
+          <header>
+            <Navbar />
+            <Routes>
+              <Route path="#" element={<Hero />} />
+            </Routes>
+          </header>
+
+          <main>
+            <Hero />
+            <About />
+            <Products />
+            <Preguntas />
+          </main>
+
+          <Footer />
+        </BrowserRouter>
+      </TextProvider>
     </>
   );
 }

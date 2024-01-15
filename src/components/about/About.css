@@ -1,0 +1,27 @@
+.boxAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 4.4rem;
+}
+
+.sectionImg {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.imgAbout {
+    max-width: 30rem;
+    
+}
+
+.sectionText {
+    height: 28rem;
+}
+
+.h2About {
+    padding-top: 3rem;
+    color: palevioletred;
+}

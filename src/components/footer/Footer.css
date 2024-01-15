@@ -1,0 +1,58 @@
+.footerBox {
+    background-color: white;
+}
+
+.textoA {
+    display: block;
+}
+
+.articleSuperior {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.sectionContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 40rem;
+}
+
+.formaContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  
+}
+
+.sectionPago {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+}
+
+.iconBoxPago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.articleMedio {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.articleInferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 1rem;
+
+    color: white;
+    background-color: deeppink;
+}
