@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Un bolso para cada momento",
+      "subtitle": "Encontrá tu bolso ideal para cada momento especial. Explorá nuestras sugerencias y descubrí las opciones que tenemos para vos.",
+      "description": []
+    },
+    {
+      "id": 2,
+      "title": "Gema Amatist",
+      "subtitle": "Un bolso de cuero clásico, perfecto para aquellos que aprecian la tradición y la durabilidad en su estilo.",
+      "description": [
+        {"id": 1, "type": "Color", "value": "Negro y beige"},
+        {"id": 2, "type": "Material", "value": "Cuero sintético PU (poliuretano)."},
+        {"id": 3, "type": "Bolsillos", "value": "8 interiores y exteriores"},
+        {"id": 4, "type": "Medidas", "value": "38 x 29 x 14 cm."},
+        {"id": 5, "type": "Capacidad", "value": "Hasta 20 litros (se pueden llevar carpetas A4)"}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Gema Onyx",
+      "subtitle": "Descubre nuestro bolso en cuero y charol, una fusión de elegancia y calidad que realza tu estilo.",
+      "description": [
+        {"id": 1, "type": "Color", "value": "Negro y charol"},
+        {"id": 2, "type": "Material", "value": "Cuero sintético PU (poliuretano)."},
+        {"id": 3, "type": "Bolsillos", "value": "8 interiores y exteriores"},
+        {"id": 4, "type": "Medidas", "value": "38 x 29 x 14 cm."},
+        {"id": 5, "type": "Capacidad", "value": "Hasta 20 litros (se pueden llevar carpetas A4)"}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Gema Rose",
+      "subtitle": "Un bolso de cuero y charol brillante, cuya fusión de cuero suave con detalles de charol aporta un toque de sofisticación y un brillo sutil a tu look.",
+      "description": [
+        {"id": 1, "type": "Color", "value": "Rosa y charol"},
+        {"id": 2, "type": "Material", "value": "Cuero sintético PU (poliuretano)."},
+        {"id": 3, "type": "Bolsillos", "value": "8 interiores y exteriores"},
+        {"id": 4, "type": "Medidas", "value": "38 x 29 x 14 cm."},
+        {"id": 5, "type": "Capacidad", "value": "Hasta 20 litros (se pueden llevar carpetas A4)"}
+      ]
+    }
+  ]

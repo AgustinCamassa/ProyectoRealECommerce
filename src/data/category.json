@@ -11,12 +11,12 @@
   },
   {
     "id": 3,
-    "name": "Contacto",
-    "type": "contact"
+    "name": "Preguntas Frecuentes",
+    "type": "qya"
   },
   {
     "id": 4,
-    "name": "Preguntas Frecuentes",
-    "type": "qya"
+    "name": "Contacto",
+    "type": "contact"
   }
 ]
