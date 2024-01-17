@@ -1,58 +1,120 @@
-.footerBox {
-    background-color: white;
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
 }
 
-.textoA {
-    display: block;
+.footerBox {
+
+}
+
+.tr {
+    display: flex;
+    background-color: #a7a5a5;
+    height: 2px;
+    margin: 3rem 2rem 2rem 2rem;
 }
 
 .articleSuperior {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 3rem;
+    justify-content: space-between;
+    margin: 0rem 2rem;
+    gap: 2rem;
 }
 
 .sectionContacto {
+    display: grid;
+}
+
+.boxContacto {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 40rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .formaContacto {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;  
+}
+
+.infoContacto {
+    display: grid;
+}
+
+.formaContacto {
+    display: flex;
 }
 
 .sectionPago {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 40rem;
+    flex: 50%;
+    gap: 1rem;
 }
 
 .iconBoxPago {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    justify-content: space-between;
+}
+
+.infoRedContacto {
+
+}
+
+.textTitulo {
+    font-size: 2rem;
+}
+
+.textoA {
+    display: block;
+    font-size: 0.8rem;
+    color: #747171;
+}
+
+.textoB {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.textoG {
+    display: block;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+@media (max-width: 725px) {
+    .articleSuperior {
+        display: grid;
+        justify-content: center;
+        gap: 1;
+        margin: 0.6;
+    }
+}
+
+@media (max-width: 430px) {
+    .boxContacto {
+        display: grid;
+        gap: 1rem;
+    }
 }
 
 .articleMedio {
-    margin-left: 5rem;
-    margin-bottom: 3rem;
+    margin: 1.5rem 2.5rem;
+}
+
+.marcaFooter {
+    font-size: 1.2rem;
+}
+
+.ubicacionFooter {
+    font-size: 0.8rem;
 }
 
 .articleInferior {
     display: flex;
-    justify-content: center;
     align-items: center;
-padding: 1rem;
+    justify-content: center;
 
-    color: white;
-    background-color: deeppink;
+    background-color: #C126B8;
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 0.9rem;
 }

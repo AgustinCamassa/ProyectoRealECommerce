@@ -1,27 +1,64 @@
+* {
+     margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+}
+
 .boxAbout {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 4.4rem;
+    margin: 5rem 3rem;
+    gap: 3rem;
 }
 
 .sectionImg {
-    display: flex;
-    justify-content: center;
-    align-items:end;
+    width: 100vw;
+    max-width: 40rem;
+    min-width: 8rem;
+}
+
+@media (max-width: 600px) {
+    .boxAbout {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionImg {
+        width: 100vw;
+        max-width: 36rem;
+        min-width: 8rem;
+    }
 }
 
 .imgAbout {
-    max-width: 30rem;
-    
+    width: 100%;
+    border-radius: 2rem;
 }
 
-.sectionText {
-    height: 28rem;
+.sectionText h3 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
 }
 
-.h2About {
-    padding-top: 3rem;
-    color: palevioletred;
+.sectionText p {
+    color: #747171;
+    font-size: 0.9rem;
+}
+
+.sectionText div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sectionText div div {
+    background-color: #C126B8;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.sectionText div h2 {
+    color: #C126B8;
+    font-size: 1rem;
 }
